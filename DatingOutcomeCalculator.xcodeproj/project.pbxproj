@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		6C716EBB25D34343001CDD77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716EBA25D34343001CDD77 /* AppDelegate.swift */; };
 		6C716EBD25D34343001CDD77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716EBC25D34343001CDD77 /* SceneDelegate.swift */; };
-		6C716EBF25D34343001CDD77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716EBE25D34343001CDD77 /* ViewController.swift */; };
-		6C716EC225D34343001CDD77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C716EC025D34343001CDD77 /* Main.storyboard */; };
 		6C716EC425D34345001CDD77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C716EC325D34345001CDD77 /* Assets.xcassets */; };
 		6C716EC725D34345001CDD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C716EC525D34345001CDD77 /* LaunchScreen.storyboard */; };
+		6C716ED525D344E2001CDD77 /* DatingOutcomeCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716ED425D344E2001CDD77 /* DatingOutcomeCalculatorViewController.swift */; };
+		6C716EDE25D34660001CDD77 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C716EDD25D34660001CDD77 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C716EB725D34343001CDD77 /* DatingOutcomeCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatingOutcomeCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C716EBA25D34343001CDD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C716EBC25D34343001CDD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C716EBE25D34343001CDD77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6C716EC125D34343001CDD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C716EC325D34345001CDD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C716EC625D34345001CDD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C716EC825D34345001CDD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C716ED425D344E2001CDD77 /* DatingOutcomeCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingOutcomeCalculatorViewController.swift; sourceTree = "<group>"; };
+		6C716EDD25D34660001CDD77 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,39 @@
 		6C716EB925D34343001CDD77 /* DatingOutcomeCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				6C716EBA25D34343001CDD77 /* AppDelegate.swift */,
-				6C716EBC25D34343001CDD77 /* SceneDelegate.swift */,
-				6C716EBE25D34343001CDD77 /* ViewController.swift */,
-				6C716EC025D34343001CDD77 /* Main.storyboard */,
-				6C716EC325D34345001CDD77 /* Assets.xcassets */,
-				6C716EC525D34345001CDD77 /* LaunchScreen.storyboard */,
-				6C716EC825D34345001CDD77 /* Info.plist */,
+				6C716ED325D34494001CDD77 /* View Controllers  */,
+				6C716ED025D34428001CDD77 /* Resources */,
+				6C716ED825D34639001CDD77 /* Extensions */,
 			);
 			path = DatingOutcomeCalculator;
+			sourceTree = "<group>";
+		};
+		6C716ED025D34428001CDD77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C716EC525D34345001CDD77 /* LaunchScreen.storyboard */,
+				6C716EBA25D34343001CDD77 /* AppDelegate.swift */,
+				6C716EBC25D34343001CDD77 /* SceneDelegate.swift */,
+				6C716EC325D34345001CDD77 /* Assets.xcassets */,
+				6C716EC825D34345001CDD77 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C716ED325D34494001CDD77 /* View Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				6C716ED425D344E2001CDD77 /* DatingOutcomeCalculatorViewController.swift */,
+			);
+			path = "View Controllers ";
+			sourceTree = "<group>";
+		};
+		6C716ED825D34639001CDD77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C716EDD25D34660001CDD77 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +150,6 @@
 			files = (
 				6C716EC725D34345001CDD77 /* LaunchScreen.storyboard in Resources */,
 				6C716EC425D34345001CDD77 /* Assets.xcassets in Resources */,
-				6C716EC225D34343001CDD77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +160,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C716EBF25D34343001CDD77 /* ViewController.swift in Sources */,
+				6C716EDE25D34660001CDD77 /* UIViewExtension.swift in Sources */,
 				6C716EBB25D34343001CDD77 /* AppDelegate.swift in Sources */,
 				6C716EBD25D34343001CDD77 /* SceneDelegate.swift in Sources */,
+				6C716ED525D344E2001CDD77 /* DatingOutcomeCalculatorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6C716EC025D34343001CDD77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6C716EC125D34343001CDD77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6C716EC525D34345001CDD77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = DatingOutcomeCalculator/Info.plist;
+				INFOPLIST_FILE = DatingOutcomeCalculator/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W578QLR797;
-				INFOPLIST_FILE = DatingOutcomeCalculator/Info.plist;
+				INFOPLIST_FILE = DatingOutcomeCalculator/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
